@@ -9,6 +9,7 @@ Desafio INDICIUM de Cientista de Dados. Usando Machine Learning para a previsão
 Este projeto aplica técnicas de **Machine Learning** para estimar o preço de aluguéis com base em diversos fatores, incluindo localização, tipo de acomodação e disponibilidade. A solução utiliza um **Random Forest Regressor** integrado a um **pipeline** do **scikit-learn**, permitindo um fluxo automatizado de processamento de dados.
 
 ## Configuração do Ambiente
+O arquivo do modelo .pkl se encontra zipado em 'LH_CD_JONATHANDANTASDEOLIVEIRA.zip' e pode ser extraído para ser utilizado
 
 Para executar o projeto corretamente, é recomendado criar um ambiente virtual e instalar as dependências necessárias.
 
