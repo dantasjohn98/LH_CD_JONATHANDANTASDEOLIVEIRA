@@ -2,13 +2,17 @@
 Desafio INDICIUM de Cientista de Dados. Usando Machine Learning para a previsão de preços de casas em Nova York
 # Projeto de Previsão de Preço de Aluguéis
 
-## Visão Geral
-Este projeto utiliza **Machine Learning** para prever o preço de aluguéis baseando-se em diversas variáveis, como localização, tipo de acomodação e disponibilidade.
-A implementação usa um **Random Forest Regressor** dentro de um **pipeline** do **scikit-learn**, garantindo um processamento automatizado de dados.
+# Sistema de Estimativa de Preços de Aluguéis
 
-## Instalação
-Antes de rodar o projeto, instale os pacotes necessários.
-Recomenda-se o uso de um ambiente virtual:
+## Introdução
+
+Este projeto aplica técnicas de **Machine Learning** para estimar o preço de aluguéis com base em diversos fatores, incluindo localização, tipo de acomodação e disponibilidade. A solução utiliza um **Random Forest Regressor** integrado a um **pipeline** do **scikit-learn**, permitindo um fluxo automatizado de processamento de dados.
+
+## Configuração do Ambiente
+
+Para executar o projeto corretamente, é recomendado criar um ambiente virtual e instalar as dependências necessárias.
+
+### Criando o Ambiente Virtual
 
 ```bash
 python -m venv venv
@@ -16,29 +20,33 @@ source venv/bin/activate  # Para Linux/macOS
 venv\Scripts\activate    # Para Windows
 ```
 
-Em seguida, instale as dependências:
+### Instalando as Dependências
+
+Se houver um arquivo `requirements.txt`, utilize o seguinte comando:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Caso não tenha um arquivo `requirements.txt`, instale os pacotes manualmente:
+Caso precise instalar manualmente, execute:
 
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn
 ```
 
-## Execução
-Para rodar o projeto, basta executar o script Python principal:
+## Como Executar
+
+Para iniciar a aplicação, execute o seguinte comando no terminal:
 
 ```bash
 python pipeline_onehot_rf.py
 ```
 
-Isso irá carregar o dataset, treinar o modelo e exibir os resultados da previsão, incluindo análises visuais como scatter plots e heatmaps.
+Isso carregará o conjunto de dados, treinará o modelo e apresentará os resultados da previsão, incluindo gráficos e estatísticas.
 
-## Como Prever o Preço de um Novo Apartamento
-Após rodar o script, você pode inserir as características de um novo apartamento para prever seu preço:
+## Como Fazer Previsões
+
+Após a execução do código, você pode inserir os detalhes de um imóvel para obter uma estimativa do preço:
 
 ```python
 novo_apartamento = {
@@ -59,18 +67,23 @@ novo_apartamento = {
     'disponibilidade_365': 355
 }
 
-preco_sugerido = prever_preco(novo_apartamento)
-print(f'Preço sugerido: {preco_sugerido}')
+preco_estimado = prever_preco(novo_apartamento)
+print(f'Valor estimado: {preco_estimado}')
 ```
 
 ## Visualização dos Resultados
-O script gera:
-- **Scatter plots** para entender a relação entre as variáveis e o preço.
-- **Heatmaps de correlação** para identificar quais variáveis têm maior impacto no preço.
 
-## Contribuição
-Sinta-se à vontade para contribuir com melhorias no modelo ou análise dos dados!
+O script gera:
+
+- **Gráficos de dispersão** para identificar relações entre variáveis e preços.
+- **Mapas de calor de correlação** para entender quais fatores impactam mais os valores dos aluguéis.
+
+## Como Contribuir
+
+Sugestões de melhorias no modelo ou na análise de dados são bem-vindas!
 
 ## Licença
-Este projeto está sob a licença MIT.
+
+Este projeto está licenciado sob os termos da MIT License.
+
 
